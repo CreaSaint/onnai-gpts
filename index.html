@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore specialized GPTs powered by onn'ai for culture, trips, writing, and encyclopedia knowledge.">
+    <title>GPTs with onn'ai - Specialized AI Tools for Culture, Travel, Writing, and Knowledge</title>
+    <style>
+        /* 전체 페이지 스타일 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* 제목 스타일 */
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* 박스 컨테이너 스타일 */
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* 개별 박스 스타일 */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            position: relative;
+        }
+
+        /* 툴팁 스타일 */
+        .box::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        /* 박스 호버 시 툴팁 표시 */
+        .box:hover::after {
+            opacity: 1;
+        }
+
+        /* 박스 호버 효과 */
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 각 박스의 배경색 */
+        .box-culture {
+            background-color: #ff6b6b; /* 빨강 계열 */
+        }
+
+        .box-trip {
+            background-color: #4ecdc4; /* 청록 계열 */
+        }
+
+        .box-writing {
+            background-color: #ffa07a; /* 주황 계열 */
+        }
+
+        .box-encyclopedia {
+            background-color: #6a5acd; /* 보라 계열 */
+        }
+
+        .box-daily-report {
+            background-color: #20b2aa; /* 청록 계열 */
+        }
+
+        .box-health {
+            background-color: #32cd32; /* 초록 계열 */
+        }
+
+        .box-beauty {
+            background-color: #ff69b4; /* 핑크 계열 */
+        }
+
+        .box-baby {
+            background-color: #87ceeb; /* 하늘색 계열 */
+        }
+
+        .box-art {
+            background-color: #dda0dd; /* 연보라 계열 */
+        }
+
+        .box-cooking {
+            background-color: #f4a460; /* 갈색 계열 */
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .box {
+                width: 150px;
+                height: 150px;
+                font-size: 1em;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box {
+                width: 120px;
+                height: 120px;
+                font-size: 0.9em;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>GPTs with onn'ai</h1>
+        <div class="box-container">
+            <a href="https://chatgpt.com/g/g-67a09f36475081919e13d2d7e94a7ce1-onn-munhwamadang" 
+               target="_blank" 
+               class="box box-culture" 
+               aria-label="Explore cultural insights with onn'ai Culture GPT" 
+               data-tooltip="Discover cultural insights and traditions"
+               rel="noopener noreferrer">Culture</a>
+            <a href="https://chatgpt.com/g/g-67885cb7ba9081918adf233d5e61c779-onn-trip" 
+               target="_blank" 
+               class="box box-trip" 
+               aria-label="Plan your trips with onn'ai Trip GPT" 
+               data-tooltip="Plan your perfect trip with AI"
+               rel="noopener noreferrer">Trip</a>
+            <a href="https://chatgpt.com/g/g-67878506504081919c9f51d2d8e08373-onn-writing" 
+               target="_blank" 
+               class="box box-writing" 
+               aria-label="Enhance your writing with onn'ai Writing GPT" 
+               data-tooltip="Boost your writing skills"
+               rel="noopener noreferrer">Writing</a>
+            <a href="https://chatgpt.com/g/g-6783a6c479408191bb22c2fab6e96d46-onn-genius" 
+               target="_blank" 
+               class="box box-encyclopedia" 
+               aria-label="Access knowledge with onn'ai Encyclopedia GPT" 
+               data-tooltip="Explore a vast knowledge base"
+               rel="noopener noreferrer">Encyclopedia</a>
+            <a href="https://chatgpt.com/g/g-67a0a08b2f80819192b4dc0e63b5a764-onn-deilriripoteu" 
+               target="_blank" 
+               class="box box-daily-report" 
+               aria-label="Get daily reports with onn'ai Daily Report GPT" 
+               data-tooltip="Stay updated with daily insights"
+               rel="noopener noreferrer">Daily Report</a>
+            <a href="https://chatgpt.com/g/g-67839fed55d08191ad6831840f11025e-onn-health" 
+               target="_blank" 
+               class="box box-health" 
+               aria-label="Improve your health with onn'ai Health GPT" 
+               data-tooltip="Health tips and advice"
+               rel="noopener noreferrer">Health</a>
+            <a href="https://chatgpt.com/g/g-6788d630463c8191927377fa2c20f0d4-onn-beauty" 
+               target="_blank" 
+               class="box box-beauty" 
+               aria-label="Enhance your beauty with onn'ai Beauty GPT" 
+               data-tooltip="Beauty tips and trends"
+               rel="noopener noreferrer">Beauty</a>
+            <a href="https://chatgpt.com/g/g-67875d8c735081919af007d21e0ee3ed-onn-baby" 
+               target="_blank" 
+               class="box box-baby" 
+               aria-label="Care for your baby with onn'ai Baby Care GPT" 
+               data-tooltip="Baby care tips and advice"
+               rel="noopener noreferrer">Baby Care</a>
+            <a href="https://chatgpt.com/g/g-67a09dddf1888191bfca9761460b7144-onn-art" 
+               target="_blank" 
+               class="box box-art" 
+               aria-label="Create art with onn'ai Art Drawing GPT" 
+               data-tooltip="Art creation and inspiration"
+               rel="noopener noreferrer">Art Drawing</a>
+            <a href="https://chatgpt.com/g/g-6783a238978481919fc08bcbd7f3b194-onn-cooking" 
+               target="_blank" 
+               class="box box-cooking" 
+               aria-label="Cook better with onn'ai Cooking GPT" 
+               data-tooltip="Recipes and cooking tips"
+               rel="noopener noreferrer">Cooking</a>
+        </div>
+    </main>
+</body>
+</html>
